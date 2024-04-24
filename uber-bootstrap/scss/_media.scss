@@ -1,0 +1,471 @@
+@media (max-width: 1200px) {
+   .menu {
+      &__item { 
+         // padding-right: 20px;  
+      }
+      &__link {
+         font-size: 15px;
+      }
+   }
+   .promo {
+      &__header {
+         font-size: 50px;
+      }
+   }
+   .mobile {
+      padding: 35px 0 60px 0;
+      &__item {
+         width: 300px;
+         height: 267px;
+      }
+   }   
+   .title {
+      font-size: 32px;
+   }
+   .benefits {
+      padding: 58px 0 60px 0;
+   }
+   .terms {      
+      padding: 49px 0 117px 0;
+	   min-height: 750px;
+      img {
+         margin-top: 40px;
+      }
+   }
+   .map {
+      min-height: 550px;
+      padding: 40px 0 0 0;
+      &__cities {
+         bottom: 40px;
+      }
+   }  
+   .main-links {
+      &__list {
+         gap: 20px;
+      }
+      &__item {
+         a {
+            font-size: 14px;
+         }
+      }
+   }
+   .menu-links {
+      &__list {         
+         gap: 15px;
+      }
+   }
+}
+@media (max-width: 992px) {
+   .menu {
+      &__item { 
+         // padding-right: 8px;  
+      }
+      &__link {
+         font-size: 10px;
+      }
+   }
+   .subheader {
+      &__logo {
+         img {
+            width:70%;
+         }
+      }
+      &__official {
+         font-size: 11px;
+      }
+      &__phone {
+         font-size: 18px;
+      }
+      &__btn {
+         width: 100%;
+         height: 40px;
+      }
+   }
+   .promo {
+      &__header {
+         font-size: 40px;
+      }
+      &__subheader {
+         font-size: 30px;
+      }
+   }
+   .benefits {
+      padding: 46px 0 52px 0;
+      &__item {
+         margin: 30px 10px 0 10px;
+         flex-direction: column;
+         align-items: center;
+      }
+      &__content {
+         margin-left: 0px;
+      }
+      &__round {
+         flex: 0 0 100px;
+         width: 100px;
+         height: 100px;
+      }
+   }
+   .benefits-content {
+      &__title {
+         margin: 10px 0 0 0;
+      }
+   }
+   .title {
+      font-size: 27px;
+   }
+   .item-mobile {
+      &__subtitle {
+         font-size: 22px;
+      }      
+   }
+   .terms {
+      padding: 41px 0 100px 0;
+	   min-height: 625px;
+   }
+   .map {
+      min-height: 450px;
+      padding: 30px 0 0 0;
+      &__cities {
+         bottom: 37px;
+      }
+   } 
+   .footer {
+      // min-height: 300px;
+      padding: 24px 0 30px 0;
+
+      &__decor {
+         width: 255px;
+         margin: 0 auto;
+      }
+      &__wrapper {         
+         flex-direction: column;
+      }
+
+      &__soc {
+         order: 1;
+      }
+      &__links {
+         order: 0;     
+      }
+      &__app {
+         order: 2;
+      }
+   }
+   .soc-footer {
+      margin-top: 16px;   
+   }
+   .app-footer {
+      justify-content: center;
+      margin-top: 19px;
+   }
+   .links-footer {
+      margin: 20px 0 0 0;
+   }
+   .main-links {
+      &__list {
+         gap: 13px;
+      }
+   }
+   .menu-links {
+      &__list {
+         gap: 10px;
+      }
+   }
+}
+@media (max-width: 768px) {
+   .body_lock {
+      overflow: hidden;
+   }
+   .menu {
+      position: fixed;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100vh;
+      padding: 20px 50px;
+      background-color: rgba(0,0,0,.8);
+      overflow: auto;
+      transition: 0.6s all;
+      &_active {
+         left: 0;
+      }
+      &__item {
+         padding-right: 0;
+         border: none;
+         margin: 10px 0; 
+         text-align: center;       
+      }
+      &__decor {
+         display: none;
+      }
+      &__link {
+         font-size: 24px;   
+      }
+      
+      &::-webkit-scrollbar {
+         width: 0;
+      }
+   }
+   .hamburger {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 12px;
+      cursor: pointer;
+      span {
+         display: block;
+         height: 2px;
+         width: 100%;
+         background-color: #ffffff;
+         margin: 0 0 2px 0;
+         transition: 0.5s all;
+      }
+      &_active {
+         span {
+            margin: 0 0 -2px 0;
+            &:nth-child(1) {
+               transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+               display: none;
+            }
+            &:nth-child(3) {
+               
+               transform: translateY(3px) rotate(45deg);
+            }
+         }
+      }
+   }
+   .xs-hidden {
+      display: none;
+   }
+   .xs-visible {
+      display: block;
+   }
+   .subheader {
+      &__phone {
+         display: block;
+         margin: 10px 0 0 0;
+         font-size: 16px;
+         font-weight: 400;
+         text-transform: uppercase;
+         color: $textcolor;
+         text-align: center;
+      }
+      &__btn {
+         display: block;
+         width: 200px;
+         height: 40px;
+         margin: 10px auto 0 auto;
+      }
+   }
+   .promo {
+      &__header {
+         line-height: 45px;
+      }
+   }
+   .benefits {
+      padding: 34px 0 44px 0;
+   }
+   .title {
+      font-size: 21px;
+   }
+   .terms {
+      padding: 33px 0 57px 0;
+	   min-height: 500px;
+   }
+   .require {
+      padding: 30px 0 35px 0;
+      &__block {
+         margin: 35px 0 0 0;
+      }
+   }
+   .block-require {
+      &__title {
+         font-size: 18px;
+      }
+      &__list {
+         margin: 7px 0 0 0;
+         li {
+            font-size: 15px;
+            margin: 0 0 7px 0;
+
+            &::before {
+               left: -28px;
+               top: 0;
+               width: 20px;
+               height: 20px;
+            }
+         }
+      }
+      &__descr {
+         font-size: 14px;
+      }
+   } 
+   .map {
+      min-height: 400px;
+      padding: 26px 0 0 0;
+      &__cities {
+         font-size: 15px;
+         bottom: 29px;
+      }
+   } 
+}
+@media (max-width: 575px) {
+   nav {
+      height: 30px;
+   }
+   .subheader {
+      height: 60px;
+      top: 30px;
+      &__official {
+         display: none;
+      }
+      &__logo {
+         margin: 16px 0 0 0;
+      }
+   }
+   .subheader {
+      height: 60px;
+      &__phone {
+         font-size: 12px;
+         margin: 11px 0 0 0;
+      }
+      &__btn {
+         margin: 6px auto 0 auto;
+         width: 110px;
+         height: 22px;
+         font-size: 10px;
+      }
+   }
+   .promo {
+      min-height: 400px;
+      padding: 143px 0 32px 0;
+      &__header {
+         font-size: 30px;
+         padding: 0 24px;
+         line-height: 35px;
+      }
+      &__subheader {
+         font-size: 20px;
+         margin-top: 33px;
+         padding: 0 10px;
+         line-height: 30px;
+      }
+      &__text {
+         display: none;
+      }
+      &__btn {
+         width: 210px;
+         height: 50px;
+         margin-top: 72px;
+      }
+   }
+   .menu {
+      width: 85%;
+      &__item {
+         padding: 5px 0;
+         width: 100%;
+         text-align: center;   
+      }
+      &__link {
+         display: block;
+      }
+   }
+   .benefits {
+      padding: 22px 0 36px 0;
+
+      &__item {
+         margin-top: 26px;
+      }
+   }
+   .benefits-content {
+      &__title {
+         font-size: 16px;
+      }
+   }
+   .title {
+      font-size: 16px;
+      margin-top: 15px;
+      line-height: 16px;
+   }
+   .subtitle {
+      font-size: 14px;
+   }
+   .mobile {
+      padding: 22px 0 42px 0;
+      &__item {
+         width: 280px;
+         height: 254px;
+      }
+   }
+   .item-mobile {
+      &__subtitle {
+         font-size: 18px;
+         padding: 80px 10px 0 10px;
+      }      
+   }
+   .terms {
+      padding: 25px 0 31px 0;
+	   min-height: 393px;
+
+      &__black {
+         height: 100%;
+      }
+      img {
+         margin-top: 36px;   
+      }
+      &__title {
+         display: none;
+      }
+      &__subtitle {
+         display: none;
+      }
+      &__text {
+         color: $textcolor;
+      }
+   }
+   .require {
+      padding: 22px 0 30px 0;
+   
+      &__block {
+         margin: 30px 0 0 0;
+      }
+   }
+   .block-require {
+      &__title {
+         font-size: 16px;
+      }
+      &__list {
+         margin: 5px 0 0 0;
+         li {
+            font-size: 14px;
+            margin: 0 0 5px 0;
+
+            &::before {
+               left: -28px;
+               top: 0;
+               width: 20px;
+               height: 20px;
+            }
+         }
+      }
+      &__descr {
+         font-size: 14px;
+      }
+   } 
+   .map {
+      min-height: 360px;
+      padding: 26px 0 0 0;
+      &__cities {
+         font-size: 12px;
+         bottom: 29px;
+      }
+   } 
+}
